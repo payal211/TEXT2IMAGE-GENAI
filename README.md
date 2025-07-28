@@ -72,6 +72,7 @@ http://localhost:5000/image/generated_YYYYMMDD_HHMMSS.png
 
 
 📁 Project Structure
+```
 bash
 
 ├── text2image-genai/
@@ -82,13 +83,13 @@ bash
    ├── outputs/             # Generated images
    └── README.md            # Documentation
    ├── ./stable-diffusion-v1-5/
-      ├── model_index.json
+   ├── model_index.json
       ├── scheduler/
       ├── unet/
       ├── vae/
       ├── tokenizer/
       ├── text_encoder/
-
+```
 🧩 Optional Enhancements
 Add Streamlit or Gradio UI
 
