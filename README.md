@@ -1,7 +1,5 @@
 ✅ README.md – Project Overview
-markdown
-Copy
-Edit
+
 # 🖼️ Text-to-Image GenAI
 
 This project uses Stable Diffusion to generate images from natural language prompts using Python and Flask.
