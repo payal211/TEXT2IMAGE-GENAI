@@ -74,9 +74,7 @@ http://localhost:5000/image/generated_YYYYMMDD_HHMMSS.png
 📁 Project Structure
 bash
 text2image-genai/
-
 ├── app.py               # Flask API
-
 ├── generator.py         # Image generation logic
 
 ├── utils.py             # Helper functions
@@ -88,6 +86,7 @@ text2image-genai/
 └── README.md            # Documentation
 
 ├── ./stable-diffusion-v1-5/
+
     ├── model_index.json
     ├── scheduler/
     ├── unet/
