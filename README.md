@@ -55,6 +55,7 @@ git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
 or just download using python file
 
 pip install -U huggingface-hub
+
 RUN: python download_model.py
 
 
