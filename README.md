@@ -22,7 +22,7 @@ This project uses Stable Diffusion to generate images from natural language prom
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/text2image-genai.git
+   git clone https://github.com/payal211/text2image-genai.git
    cd text2image-genai
 
 
@@ -31,45 +31,51 @@ Create a virtual environment:
 bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
 
+Install dependencies:
+```
 bash
 pip install -r requirements.txt
+```
 🧠 Usage
 Start the Flask API
+```
 bash
 python FLASK_API.py
+```
 
 
 🔽 Step 1: Download the Model Locally
 You can use Hugging Face's CLI to download:
-
+```
 bash
 huggingface-cli login  # optional, if model is gated
 
 # Download all files to a folder
 git lfs install
 git clone https://huggingface.co/runwayml/stable-diffusion-v1-5
-
+```
 
 or just download using python file
-
+```
 pip install -U huggingface-hub
 
 RUN: python download_model.py
-
+```
 
 Example API Request
+```
 bash
 curl -X POST http://localhost:5000/generate \
      -H "Content-Type: application/json" \
      -d '{"prompt": "A cat playing piano in space"}'
+```
 Get Generated Image
 Visit:
-
+```
 bash
 http://localhost:5000/image/generated_YYYYMMDD_HHMMSS.png
-
+```
 
 📁 Project Structure
 ```
@@ -101,11 +107,10 @@ Deploy to Hugging Face Spaces, Render, or Docker
 Uses runwayml/stable-diffusion-v1-5 via Hugging Face Diffusers.
 
 
-
 ## ✅ Optional: Streamlit UI (`streamlit_app.py`)
 
-
 Run the streamlit app:
+```
 bash
 streamlit run streamlit_app.py
-
+```
